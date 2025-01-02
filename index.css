@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
+    text-align: justify;
 }
 
 .navbar {
@@ -50,6 +51,7 @@ body {
 }
 
 .card {
+    width: 480px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -66,6 +68,8 @@ body {
 }
 
 .card-img{
+    height: 140px;
+    width: 300px;
     margin: 3px;
 }
 
@@ -106,9 +110,16 @@ video{
     border-radius: 8px;
 }
 
-.updates ul, .events ul, .important-dates ul, .important-links ul {
+.updates ul, .events ul, .important-dates ul, .important-links ul, .meet-the-team ul {
     list-style-type: none;
     padding: 0;
+}
+
+.meet-the-team ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .updates li, .events li, .registration-fee li, .important-dates li, .important-links li {
@@ -173,6 +184,11 @@ video{
 /* Responsive Design */
 
 @media (max-width: 768px) {
+
+    .card-img{
+        max-width: 98%;
+    }
+
     .footer-content {
         flex-direction: column;
         align-items: center;
