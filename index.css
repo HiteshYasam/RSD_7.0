@@ -186,7 +186,9 @@ video{
 @media (max-width: 768px) {
 
     .card-img{
-        max-width: 98%;
+        width: 300px;
+        height: 200px;
+        margin: 5px auto;
     }
 
     .footer-content {
