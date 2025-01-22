@@ -131,6 +131,10 @@ video{
     color: #0056b3;
 }
 
+#exp-date{
+    text-decoration: line-through;
+}
+
 .footer {
     background-color: #0056b3;
     color: white;
